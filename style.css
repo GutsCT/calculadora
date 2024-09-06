@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #090c31;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.calculadora{
+    background-color: #15173c;
+    color: white;
+    display: grid;
+    max-width: 100%;
+    width: 35rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 2rem;
+    gap: 3rem;
+    border-radius: 3rem;
+
+}
+
+.display{
+    grid-column: 1/-1;
+    background-color: #090c31;;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-size: 4rem;
+    text-align: right;
+    margin: 1rem 1rem;
+    font-family: monospace;
+}
+
+.boton{
+    border: none;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton:hover{
+    background-color: #090c31;
+    transition: background-color 0.3s;
+}
+
+.boton:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+#multi::before{
+    content: 'x';
+}
+
+
+
+
+
+
+.cero{
+    grid-column:1/3 ;
+}
+
+.igual{
+    padding: 6rem 3rem;
+    grid-row: 2 span;
+    background-color: #e6394a;
+}
+
+.igual:hover{
+    background-color: #e65766;;
+}
+
